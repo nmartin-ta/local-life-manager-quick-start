@@ -1,0 +1,5 @@
+# Obsidian per-user state — everything else in .obsidian/ ships deliberately
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.DS_Store
