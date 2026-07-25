@@ -19,7 +19,7 @@ If it clearly relates to an existing project or area, add the wikilink inline. C
 
 1. Read `Ideas.md`, plus any notes elsewhere tagged `#idea`.
 2. Cluster related items. For each cluster or standalone idea, propose ONE of:
-   - **Promote** — it's really a project: offer to create a project MOC (structure of `Projects/Website Refresh.md`) and move the idea content there.
+   - **Promote** — it's really a project: offer to create a project MOC (from `Templates/Template, Project.md`) and move the idea content there.
    - **File** — it belongs inside an existing project/area note: offer to move it there as a linked bullet.
    - **Keep** — not ripe; leave it, optionally reworded.
    - **Drop** — dead; delete the line (only with approval).

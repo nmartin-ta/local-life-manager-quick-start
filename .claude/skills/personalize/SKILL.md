@@ -17,9 +17,9 @@ First-run onboarding. Interview the user, then set up the vault around their rea
 ## Actions (after the interview, confirm before writing)
 
 1. **Fill `CLAUDE.md` → `## About me`**: replace the placeholder comment with a compact summary — name, role, what the vault is for, preferences. Keep it under 15 lines.
-2. **Seed `Projects/`**: one MOC note per project, copying the exact structure of `Projects/Website Refresh.md` (frontmatter `type: project` + `status`, description line, `## Related notes`, `## Meetings` with the same embedded `base` block — copy the base block verbatim, it filters per-note automatically).
-3. **Seed `Areas/`**: one note per area, structure of `Areas/Professional Development.md` (frontmatter `type: area`, short description, `## Notes`).
-4. **Offer to delete example content**: everything tagged `#example` (example project, area, meeting, two daily notes, the Ideas.md example line). List the files first; delete only on confirmation — move nothing to Archive, these are samples not user data.
+2. **Seed `Projects/`**: one MOC note per project, created from `Templates/Template, Project.md` (fill in the name, description, and status; the `base` block must be copied verbatim — it filters per-note automatically). Map the interview's rough status onto `status: in-progress` or `status: completed` (anything not finished is `in-progress`).
+3. **Seed `Areas/`**: one note per area — frontmatter `type: area`, a short description, and a `## Notes` section.
+4. **Offer to delete example content**: everything tagged `#example` (example project, area, meeting, two daily notes, the Ideas.md example line). List the files first; delete only on confirmation — move nothing to Archive, these are samples not user data. After deleting, also remove the sentence about `#example` notes from CLAUDE.md's Linking section (it describes content that no longer exists).
 
 ## Wrap up
 

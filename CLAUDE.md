@@ -14,11 +14,11 @@ An Obsidian vault (folders of markdown) that you operate on directly. The user v
 
 - **Daily Notes/** — one note per day, `YYYY-MM-DD.md`, created from `Templates/Template, Daily Note.md`. When the user says "start my day", create today's note from that template if it doesn't exist (fill the date heading and prev/next links exactly as the template's Templater code would) and summarize anything open from yesterday's note.
 - **Meetings/** — one note per meeting, `YYYY-MM-DD Title.md`, frontmatter `type: meeting`, `date`, `project` (a quoted wikilink). A meeting linked to a project appears automatically on that project's page.
-- **Projects/** — one MOC note per active project: `type: project`, `status`, short description, links, embedded meetings table. Finished projects move to `Archive/`.
+- **Projects/** — one MOC note per active project: `type: project`, `status` (`in-progress` or `completed`), short description, links, embedded meetings table. Finished projects move to `Archive/`. New project notes come from `Templates/Template, Project.md`.
 - **Areas/** — ongoing responsibilities with no end date. One note per area, `type: area`.
 - **References/** — source material and attachments.
 - **Archive/** — anything no longer active. Move, don't delete.
-- **Ideas.md** — quick-capture inbox; the `ideas` skill appends and reviews.
+- **Ideas.md** — quick-capture inbox; the `ideas` skill appends and reviews. Tag stray thoughts in other notes `#idea` and the review sweep finds them.
 - **Templates/** — don't edit the Templater code (`<% … %>`) unless asked; explain it if the user is curious.
 
 ## Linking
