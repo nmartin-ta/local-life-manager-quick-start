@@ -14,10 +14,10 @@ If you get hooked and want the deep end, come find me. I like talking about this
 
 ## Part 1: Set up Obsidian
 
-1. **Install Obsidian** from [obsidian.md](https://obsidian.md). It's free for personal use. You need a reasonably current version (1.12.2 or newer), because the two bundled plugins require it. (Already have Obsidian? Update it first: Settings → General → Check for updates.)
+1. **Install Obsidian** from [obsidian.md](https://obsidian.md). It's free. You need a reasonably current version (1.12.2 or newer), because the two bundled plugins require it. (Already have Obsidian? Update it first: Settings → General → Check for updates.)
 2. **Get this repo onto your machine.** Either `git clone` it or use GitHub's "Download ZIP" button and unzip it somewhere sensible.
 3. **Open it as a vault.** Launch Obsidian, choose "Open folder as vault," and pick the repo folder. A "vault" is just Obsidian's word for a folder of notes.
-4. **Accept the trust prompt.** Obsidian will ask once whether to trust this vault's community plugins, because two come pre-installed. Say yes. **Templater** fills in dates and handles the small scripts inside the templates, and **Meta Bind** provides the clickable buttons. That's the extent of what they do here.
+4. **Accept the trust prompt.** Obsidian will ask once whether to trust this vault's community plugins, because two come pre-installed. Say yes. **Templater** fills in dates and handles the small scripts inside the templates, and **Meta Bind** powers the "New meeting note" button. That's the extent of what they do here.
 
 Now a quick tour. The folder layout is a simplified version of a method called PARA, and the core distinction is worth thirty seconds of your attention: **projects end, areas don't**.
 
@@ -36,7 +36,7 @@ Five minutes of clicking will teach you more than I can in prose:
 2. **Open the two example daily notes** (`2026-07-20` and `2026-07-21` in `Daily Notes/`) and click the links inside them. This is the habit that makes the whole system work: notes pointing at other notes.
 3. **Open the graph view**, the icon that looks like connected dots. Sparse now. It won't stay that way.
 4. **Open `Meetings/Meetings.md`** and press the "New meeting note" button. It asks for a title, stamps today's date, files the new note into `Meetings/`, and adds a row to the table below, all in one go.
-5. **Link that meeting to a project.** In your new meeting note, set the `project` property to `[[Website Refresh]]`. Now open the Website Refresh page in `Projects/`: your meeting is sitting in its meetings table. Nobody maintains that table. It builds itself from the links.
+5. **Link that meeting to a project.** In your new meeting note, set the `project` property (in the Properties panel at the top of the note) to `[[Website Refresh]]`. Now open the Website Refresh page in `Projects/`: your meeting is sitting in its meetings table. Nobody maintains that table. It builds itself from the links.
 
 One more thing about Obsidian worth knowing early: there are thousands of community plugins, and anything that annoys you about the app, a plugin probably fixes. For years my task list lived in Todoist, a separate app with its own sync and its own inbox. Then I found TaskNotes, a plugin that turns the vault itself into a to-do app. Todoist went in the bin the same week. I left TaskNotes out of this kit to keep things simple, but it shows how far the plugin ecosystem goes.
 
