@@ -1,4 +1,22 @@
 ---
 type: moc
 ---
-%% include base that shows all projects
+
+# Projects
+
+One folder per project; each has a `+` note like this one as its front page.
+
+```base
+filters:
+  and:
+    - type == "project"
+views:
+  - type: table
+    name: All projects
+    order:
+      - file.name
+      - status
+    sort:
+      - property: file.name
+        direction: ASC
+```

@@ -9,7 +9,20 @@ One-line description of the project and its end state.
 
 ## Related notes
 
-%% I want this to be a base as well to pull up notes that have the project in its "related" property 55
+```base
+filters:
+  and:
+    - related-to.contains(this.file.asLink())
+    - type != "meeting"
+views:
+  - type: table
+    name: Related notes
+    order:
+      - file.name
+    sort:
+      - property: file.name
+        direction: ASC
+```
 
 ## Meetings
 
@@ -17,7 +30,7 @@ One-line description of the project and its end state.
 filters:
   and:
     - type == "meeting"
-    - project.contains(this.file.asLink())
+    - related-to.contains(this.file.asLink())
 views:
   - type: table
     name: Meetings

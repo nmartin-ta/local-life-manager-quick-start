@@ -15,8 +15,6 @@ style: primary
 actions:
   - type: insertIntoNote
     templater: true
-    value: 80 Templates/Template, Time Log Entry.md
+    value: 98 Templates/Template, Time Log Entry.md
     line: selfEnd + 2
 ```
-
-%% do what needs to be done to make insert timestamp work as in my other vaults %%

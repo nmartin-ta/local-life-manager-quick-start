@@ -12,13 +12,28 @@ This is an example project note — a "map of content" for one project. Keep a s
 
 - [[+Professional Development]] — example of linking a project to an area
 
+```base
+filters:
+  and:
+    - related-to.contains(this.file.asLink())
+    - type != "meeting"
+views:
+  - type: table
+    name: Related notes
+    order:
+      - file.name
+    sort:
+      - property: file.name
+        direction: ASC
+```
+
 ## Meetings
 
 ```base
 filters:
   and:
     - type == "meeting"
-    - project.contains(this.file.asLink())
+    - related-to.contains(this.file.asLink())
 views:
   - type: table
     name: Meetings
