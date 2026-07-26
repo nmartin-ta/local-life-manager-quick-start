@@ -1,60 +1,58 @@
 # An Obsidian + Claude starter vault
 
-Hi. I'm Nick. This repo is a small, working notes system: a folder of plain markdown files, an Obsidian configuration that turns them into a linked notebook, and a Claude configuration that lets an AI assistant read, file, and organize them for you. Clone it, open it, and you'll have the whole thing working in about fifteen minutes.
+Hi, I'm Nick. This is a small notes system you can clone and run: a folder of markdown files, plus the Obsidian and Claude configuration that makes them useful. Setup takes about fifteen minutes.
 
 ## The idea
 
-Everything here is a plain text file in a folder. That's the load-bearing decision. Your notes aren't rows in someone's database or documents trapped inside an app. They're files you can open in any editor, back up however you like, and take with you when you leave. No app in this setup owns your data. If you stop using Obsidian tomorrow, or Claude, the files still work.
+Everything here is a plain text file in a folder. Your notes aren't rows in somebody's database or documents locked inside an app. They're files, so you can open them in any editor, back them up however you like, and still read them in ten years if both of the tools below have gone out of business.
 
-Three things read those same files. You, obviously. Obsidian, a free app that turns the folders into a linked, searchable notebook — every `[[Note Name]]` becomes a clickable connection, and the whole thing renders as a graph. And Claude, which operates on the files directly: it creates notes, files things into the right folders, adds links, drafts text, and tidies up after you. Same filing cabinet, two sets of hands.
+Three things read those same files. You, obviously. Obsidian, a free app that turns the folders into a linked, searchable notebook, where every `[[Note Name]]` becomes a clickable connection and you can see the whole web of them at once. And Claude, which works on the files directly: making notes, filing them where they belong, adding links, drafting text, cleaning up after you.
 
-A word on complexity. Obsidian can be as simple or as complicated as you want: some people keep a flat folder of text files, some build things that look like mission control. This kit sits in the middle, with buttons, properties, automatic tables, and a little template code. That middle layer is exactly what Claude is good at. You never have to learn it. Changing any of it is a matter of asking, not learning to code.
+Obsidian can be as simple or as complicated as you want. Some people keep a flat folder of text files and never touch a setting; other people build the kind of thing that looks like mission control and has a plugin for everything. This kit sits in the middle, with buttons, note properties, tables that fill themselves in, and a bit of code inside the templates. That middle layer is the part Claude is good at, so you don't have to learn it to change it. When you want something to work differently, ask, and it gets set up.
 
-Fair warning: this kit is a deliberately bare-bones seed of a much deeper system I use every day. Mine reads my calendar and email, preps my meetings, tracks project budgets, and writes my morning briefing before I sit down. None of that is in here, on purpose. The goal of this repo is a working start in fifteen minutes, and everything included earns its place at that size.
+What's here is a stripped-down version of a system I use every day. Mine reads my calendar and email, preps my meetings, tracks project budgets, and writes a briefing into my daily note before I sit down in the morning. None of that is in this repo. Fifteen minutes to something working was the constraint I set, and most of my system doesn't fit inside it.
 
-If you get hooked and want the deep end, come find me. I like talking about this stuff more than is probably healthy.
+If you want the deep end, come find me.
 
 ## Setup
 
 1. **Get this repo onto your machine.** Either `git clone` it or use GitHub's "Download ZIP" button and unzip it somewhere sensible.
-2. **Open the vault in Obsidian.** Install Obsidian from [obsidian.md](https://obsidian.md) (it's free; you need 1.12.2 or newer). Choose "Open folder as vault" and pick the `my-obsidian-vault` folder inside the repo. Obsidian will ask once whether to trust the vault's community plugins; say yes. There are three: **Templater** fills in dates and handles the small scripts inside the templates, **Meta Bind** powers the "New meeting note" button, and **TaskNotes** turns the notes in `05 Tasks/` into a to-do system.
-3. **Point Claude at the repo folder**, the one containing `my-obsidian-vault`, not the vault itself: Claude's configuration lives at the root. Either [Claude Code](https://claude.com/claude-code) in your terminal (launch `claude` inside the repo) or [Claude Desktop](https://claude.com/download) with a Cowork session on the repo directory.
-4. **Say "initiate."** Claude takes it from there: a short guided tour of the folders (you'll press the buttons, open a task view, see the graph), then an interview about your actual projects and areas, then it rebuilds the vault around your life and offers to clear out the example content. Ten minutes, and the vault is yours instead of mine.
+2. **Open the vault in Obsidian.** Install Obsidian from [obsidian.md](https://obsidian.md) — it's free, and you need version 1.12.2 or newer. Choose "Open folder as vault" and pick the `my-obsidian-vault` folder inside the repo. Obsidian will ask once whether you trust the vault's community plugins; say yes. There are three of them. **Templater** fills in dates and runs the small scripts inside the templates, **Meta Bind** powers the buttons, and **TaskNotes** turns the notes in `05 Tasks/` into a to-do system.
+3. **Point Claude at the repo folder** — the one containing `my-obsidian-vault`, not the vault itself, because Claude's configuration lives at the root. Use either [Claude Code](https://claude.com/claude-code) in your terminal (launch `claude` inside the repo) or [Claude Desktop](https://claude.com/download) with a Cowork session on the repo directory.
+4. **Say "initiate."** Claude takes it from there: a short tour of the folders where you press the buttons and open a task view yourself, then some questions about your actual projects and areas, then it rebuilds the vault around your life and offers to clear out my example content.
 
-When Claude lands in the repo it reads `CLAUDE.md` first. That file is its orientation document: what this vault is, how the folders work, what the conventions are, and (once initiate fills it in) who you are. Think of it as the onboarding memo a new assistant reads on day one.
+When Claude lands in the repo it reads `CLAUDE.md` first. That file explains what the vault is, how the folders work, which conventions to follow, and, once initiate has filled it in, who you are.
 
-There's also a `.claude/skills/` folder holding six skills. A skill is a short instruction file for a recurring workflow; Claude loads the right one automatically when your request matches. You never invoke them by name. You just say the thing. And like everything else here, the skills are plain markdown: open the folder and read them, each one fits on a page.
+There's also a `.claude/skills/` folder holding six skills. A skill is a short instruction file for a workflow you repeat; Claude loads the right one when your request matches, so you don't call them by name. They're plain markdown, so read any of them if you're curious what it actually does.
 
 After initiate, try these:
 
 | Say this | What happens |
 |---|---|
-| "start my day" | Creates today's daily note and summarizes anything left open from yesterday. (This one's a convention in CLAUDE.md rather than a skill. Same effect.) |
-| "capture an idea: …" | Appends a dated bullet to the idea garden in `02 Areas/Local Life Manager/Ideas.md`. Capture only; no over-eager elaboration. |
-| "review my ideas" | Later, when ideas have piled up: sweeps your `#idea` jottings into the garden, clusters them, and proposes which should become projects, which get filed, which get dropped. |
-| "make a task: order new laptop by Friday" | Creates a task note in `05 Tasks/TaskNotes/` — after checking it isn't already there. "By Friday" becomes the due date. |
+| "start my day" | Creates today's daily note and summarizes anything left open from yesterday. (A convention in CLAUDE.md rather than a skill, but it works the same.) |
+| "capture an idea: …" | Appends a dated bullet to the idea garden in `02 Areas/Local Life Manager/Ideas.md`, then stops there. |
+| "review my ideas" | Later, once ideas have piled up: sweeps your `#idea` jottings into the garden, groups them, and proposes which should become projects, which get filed, and which get dropped. |
+| "make a task: order new laptop by Friday" | Creates a task note in `05 Tasks/TaskNotes/`, after checking it isn't already there. "By Friday" becomes the due date. |
 | "triage my notes" | Sweeps recent dailies and meeting action items for commitments that never became tasks, and proposes them as a numbered list. |
-| "tidy my vault" | Sweeps for orphaned notes, missing links, stale projects, misplaced files. Reports first; changes nothing without your approval. |
-| "edit this email so it sounds like me" | Drafts or edits in your voice, using a style memory it builds over time at `02 Areas/Writing Voice.md`. Also strips the usual AI tells. |
-| "make a skill that …" | Writes a new skill file for any workflow you find yourself repeating. More on this below. |
+| "tidy my vault" | Looks for orphaned notes, missing links, stale projects, misplaced files. Reports first and changes nothing without your say-so. |
+| "edit this email so it sounds like me" | Drafts or edits in your voice, using a style memory it builds up over time at `02 Areas/Writing Voice.md`. |
+| "make a skill that …" | Writes a new skill file for something you find yourself doing over and over. More on this below. |
 
-One concept ties Obsidian and Claude together: **the wikilinks you make aren't decoration.** When Claude opens a meeting note and sees `related-to: "[[Website Refresh]]"`, it follows that link and reads the project page. When your daily note links to a meeting and the meeting links back to a project, Claude can trace your whole week without asking you anything. A well-linked vault literally makes Claude understand your world better. Every link you add is context you never have to explain again.
+One thing worth understanding, because it's what makes the two halves work together: the wikilinks you make aren't decoration. When Claude opens a meeting note and sees `related-to: "[[Website Refresh]]"`, it follows the link and reads the project page. If your daily note links to a meeting and that meeting links back to a project, Claude can trace a whole week of your work without you explaining any of it. Linking generously is the cheapest thing you can do to make the assistant half of this useful.
 
 ## Leveling up
 
-Where this goes once the basics feel boring:
+**Integrations.** Connect Claude to your calendar and email (Microsoft 365 and Google both have connectors) and the workflows start compounding. My morning-briefing skill reads my inbox and calendar, checks them against my project notes, and writes the day's priorities into my daily note. It runs on the same foundation you're holding, plus two connectors and one more skill.
 
-**Integrations.** Connect Claude to your calendar and email (Microsoft 365, Google, and others have connectors) and the workflows start compounding. My morning-briefing skill reads my inbox and calendar, cross-references my project notes, and writes the day's priorities into my daily note before I sit down. All of that is built on the same seed you're holding right now, plus a couple of connectors and one extra skill.
+**More plugins.** There are thousands of community plugins, and whatever annoys you about Obsidian, one of them probably fixes it. TaskNotes is my case in point. My task list lived in Todoist for years, a separate app with its own sync and its own inbox to ignore. Then I found a plugin that turns the vault itself into a to-do app, and Todoist went in the bin the same week. Deeper Templater use belongs here too, once you're comfortable poking at template code.
 
-**More plugins.** There are thousands of community plugins, and anything that annoys you about Obsidian, a plugin probably fixes. TaskNotes, which powers `05 Tasks/`, is the proof. For years my task list lived in Todoist, a separate app with its own sync and its own inbox. Then I found a plugin that turns the vault itself into a to-do app; Todoist went in the bin the same week, and TaskNotes ships in this kit. Deeper Templater use belongs here too, once you're comfortable reading the template code.
+**Schedules.** Briefings and audits that show up on a timer instead of waiting for you to ask; a periodic "tidy my vault" sweep is a reasonable first one.
 
-**Schedules.** Briefings that happen on a timer, unprompted. A periodic "tidy my vault" audit is a good first one: the system stays healthy without you thinking about it.
+**Version control.** The vault is just files, so git works on it. Commit now and then, or ask Claude to, and you get every note's history, readable diffs when Claude changes something, and a way to sync between machines that can't silently eat your data. Cloning this repo already put you inside a git repository.
 
-**Version control.** The vault is just files, so git works on it. Commit now and then (or ask Claude to) and you get free, forever undo: every note's history, visible diffs when Claude changes things, and a painless way to sync between machines. If you cloned this repo you're already standing in a git repository; make it your own and start committing.
+**Growing the system.** The `improve-this-system` skill exists for this. Anything you notice yourself repeating, like summarizing the week every Friday or pulling action items out of meeting notes, can become a skill: say "make a skill that does X" and Claude writes the file. Claude also keeps a running list of friction it notices in `02 Areas/Local Life Manager/Backlog.md`, and "groom the backlog" walks you through it. A year in, what you're running won't look much like what you cloned.
 
-**Growing the system itself.** This is the real endgame, and it's why the `improve-this-system` skill exists. Any workflow you notice yourself repeating ("every Friday I summarize the week," "after each meeting I extract the action items") can become a skill: say "make a skill that does X" and Claude writes the skill file for you. Claude also keeps a quiet list of friction it notices in `02 Areas/Local Life Manager/Backlog.md`; say "groom the backlog" occasionally and decide what's worth fixing. The system you have a year from now won't be this kit. It'll be the thing you and Claude grew out of it, one workflow at a time.
-
-That's the pitch. Files you own, an app that makes them navigable, an assistant that does the filing. If you build something interesting on top of it, or get stuck, come talk to me.
+If you build something interesting on top of this, or get stuck partway through, come talk to me.
 
 ---
 
