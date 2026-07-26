@@ -48,7 +48,9 @@ One thing worth understanding, because it's what makes the two halves work toget
 
 **Schedules.** Briefings and audits that show up on a timer instead of waiting for you to ask; a periodic "tidy my vault" sweep is a reasonable first one.
 
-**Version control.** The vault is just files, so git works on it. Commit now and then, or ask Claude to, and you get every note's history, readable diffs when Claude changes something, and a way to sync between machines that can't silently eat your data. Cloning this repo already put you inside a git repository.
+**Git, and using this on more than one computer.** Everything here is files, so git works on it, and cloning this repo already put you inside a git repository. Committing every so often, or asking Claude to, gives you each note's history and a readable diff whenever Claude changes something.
+
+The reason I actually bother is syncing. My own vault and all of its skills live in a GitHub repo that's private to me, which is how the same setup follows me between my work laptop and the machine at home: pull in the morning, work, then commit and push when I'm done, and the other computer picks it all up next time I open it. The notes matter, but the skills are the part I'd really miss. Teaching Claude something on one computer and having it already know that on the other is most of the value. Two things if you go this route: make the repo **private**, because your notes and your working life are in it, and put your own remote on it rather than pushing to mine. If you only ever use one computer, skip all of this. Git is still nice for the undo history, but nothing in the kit depends on it.
 
 **Growing the system.** The `improve-this-system` skill exists for this. Anything you notice yourself repeating, like summarizing the week every Friday or pulling action items out of meeting notes, can become a skill: say "make a skill that does X" and Claude writes the file. Claude also keeps a running list of friction it notices in `02 Areas/Local Life Manager/Backlog.md`, and "groom the backlog" walks you through it. A year in, what you're running won't look much like what you cloned.
 
