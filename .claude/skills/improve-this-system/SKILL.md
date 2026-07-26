@@ -22,7 +22,7 @@ When the user describes a workflow they repeat ("every Friday I…", "make a ski
     <Numbered steps. Name exact files and folders. State what to ask the user vs. do automatically. End with what "done" looks like.>
 
 3. Keep it under ~50 lines. One skill = one workflow; if it needs modes, two clear modes max (see the `ideas` skill).
-4. If the new workflow changes vault conventions (new folder, new frontmatter field), update `CLAUDE.md` → Vault conventions in the same pass.
+4. If the new workflow changes vault conventions (new folder in `my-obsidian-vault/`, new frontmatter field), update `CLAUDE.md` → Vault conventions in the same pass.
 
 ## 2. Refine an existing skill
 

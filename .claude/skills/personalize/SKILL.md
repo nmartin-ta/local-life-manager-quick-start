@@ -5,7 +5,7 @@ description: Use when a new user wants to make this vault theirs — first-run s
 
 # Personalize This Vault
 
-First-run onboarding. Interview the user, then set up the vault around their real life. Ask questions **one or two at a time**, not as a wall.
+First-run onboarding. Interview the user, then set up the vault around their real life. Ask questions **one or two at a time**, not as a wall. All note paths are inside `my-obsidian-vault/`.
 
 ## Interview
 
@@ -17,10 +17,10 @@ First-run onboarding. Interview the user, then set up the vault around their rea
 ## Actions (after the interview, confirm before writing)
 
 1. **Fill `CLAUDE.md` → `## About me`**: replace the placeholder comment with a compact summary — name, role, what the vault is for, preferences. Keep it under 15 lines.
-2. **Seed `Projects/`**: one MOC note per project, created from `Templates/Template, Project.md` (fill in the name, description, and status; the `base` block must be copied verbatim — it filters per-note automatically). Map the interview's rough status onto `status: in-progress` or `status: completed` (anything not finished is `in-progress`).
-3. **Seed `Areas/`**: one note per area — frontmatter `type: area`, a short description, and a `## Notes` section.
-4. **Offer to delete example content**: everything tagged `#example` (example project, area, meeting, two daily notes, the Ideas.md example line). List the files first; delete only on confirmation — move nothing to Archive, these are samples not user data. After deleting, also remove the sentence about `#example` notes from CLAUDE.md's Linking section (it describes content that no longer exists).
+2. **Seed `01 Projects/`**: one folder per project — `01 Projects/<Name>/` containing a `+<Name>.md` MOC created from `98 Templates/Template, Project.md` (fill in the name, description, and status; the `base` blocks must be copied verbatim — they filter per-note automatically). Map the interview's rough status onto `status: in-progress` or `status: completed` (anything not finished is `in-progress`).
+3. **Seed `02 Areas/`**: one folder per area — `02 Areas/<Name>/` containing a `+<Name>.md` note with frontmatter `type: area`, a short description, and a `## Notes` section.
+4. **Offer to delete example content**: everything tagged `#example` — the `01 Projects/Website Refresh/` folder (including Design Parameters and User Journey), the `02 Areas/Professional Development/` folder, the kickoff meeting note, the three example dailies, and the Ideas.md example line. `02 Areas/Admin/` is not example content — keep it. List the files first; delete only on confirmation — move nothing to Archive, these are samples not user data. After deleting, also remove the sentence about `#example` notes from CLAUDE.md's Linking section (it describes content that no longer exists).
 
 ## Wrap up
 
-Tell the user what changed, then suggest three first habits: press the daily-note button each morning (or say "start my day"), use the New Meeting button in `Meetings/Meetings.md`, and say "capture an idea: …" when something occurs to them.
+Tell the user what changed, then suggest three first habits: press the daily-note button each morning (or say "start my day"), use the New Meeting button in `04 Meetings/+Meetings.md`, and say "capture an idea: …" when something occurs to them.
