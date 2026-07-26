@@ -29,7 +29,7 @@
               "state": {
                 "file": "01 Projects/Website Refresh/Website Refresh.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Website Refresh"
