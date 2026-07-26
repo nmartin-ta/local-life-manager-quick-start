@@ -5,7 +5,7 @@ description: Use when the user wants to change how this system itself works — 
 
 # Improve This System
 
-The kit is a seed. This skill grows it. Four jobs:
+This skill changes how the system itself works. Four jobs:
 
 ## 1. Create a new skill
 
@@ -26,11 +26,11 @@ When the user describes a workflow they repeat ("every Friday I…", "make a ski
 
 ## 2. Refine an existing skill
 
-When a skill run went wrong: ask what the user expected, read the skill file, find the gap (missing rule, wrong trigger, ambiguous step), propose the specific edit, apply on approval. Make the smallest change that fixes the failure — don't rewrite the whole skill.
+When a skill run went wrong: ask what the user expected, read the skill file, find the gap (missing rule, wrong trigger, ambiguous step), propose the specific edit, apply on approval. Make the smallest change that fixes the failure. Don't rewrite the whole skill.
 
 ## 3. Keep CLAUDE.md current
 
-When the user's context shifts (new role, new preferences, conventions drifting from reality), update the relevant CLAUDE.md section. Keep the whole file under ~80 lines — if it's growing past that, something belongs in a skill instead.
+When the user's context shifts (new role, new preferences, conventions drifting from reality), update the relevant CLAUDE.md section. Keep the whole file under ~80 lines. If it's growing past that, something belongs in a skill instead.
 
 ## 4. Groom the backlog
 
@@ -39,7 +39,7 @@ When the user says "groom the backlog": read the `## Open` section of `my-obsidi
 ## Rules
 
 - Never edit `.obsidian/` or plugin files from this skill.
-- One skill = one workflow — don't bolt a second workflow onto an existing skill.
+- One skill = one workflow. Don't bolt a second workflow onto an existing skill.
 - Don't systematize something that happened once; wait until it's clearly a pattern.
 - Show the user any new/edited skill file content before saving.
 - After creating a skill, tell the user a phrase that will trigger it and suggest trying it now.
