@@ -17,7 +17,7 @@ Filename = the task title. Frontmatter only:
     due: YYYY-MM-DD          # hard deadline — omit if none
     scheduled: YYYY-MM-DD    # when the user plans to do it — omit if none
     related-to:
-      - "[[+Project or Area]]"
+      - "[[Project or Area note]]"
     dateCreated: <ISO timestamp>
     dateModified: <ISO timestamp>
     tags:

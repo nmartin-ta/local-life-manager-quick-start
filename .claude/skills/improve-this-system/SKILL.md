@@ -5,7 +5,7 @@ description: Use when the user wants to change how this system itself works — 
 
 # Improve This System
 
-The kit is a seed. This skill grows it. Three jobs:
+The kit is a seed. This skill grows it. Four jobs:
 
 ## 1. Create a new skill
 
@@ -32,8 +32,14 @@ When a skill run went wrong: ask what the user expected, read the skill file, fi
 
 When the user's context shifts (new role, new preferences, conventions drifting from reality), update the relevant CLAUDE.md section. Keep the whole file under ~80 lines — if it's growing past that, something belongs in a skill instead.
 
+## 4. Groom the backlog
+
+When the user says "groom the backlog": read the `## Open` section of `my-obsidian-vault/02 Areas/Local Life Manager/Backlog.md` (Claude's observer notes and the user's own gripes accumulate there). Present the items as a numbered list, each with a recommendation: **act now** (via jobs 1–3), **keep** (not ripe yet), or **drop**. Execute what the user approves, then check off or remove the handled items.
+
 ## Rules
 
 - Never edit `.obsidian/` or plugin files from this skill.
+- One skill = one workflow — don't bolt a second workflow onto an existing skill.
+- Don't systematize something that happened once; wait until it's clearly a pattern.
 - Show the user any new/edited skill file content before saving.
 - After creating a skill, tell the user a phrase that will trigger it and suggest trying it now.

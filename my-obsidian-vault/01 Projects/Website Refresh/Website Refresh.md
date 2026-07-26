@@ -6,7 +6,7 @@ tags:
 ---
 Refresh the team website: new structure, updated copy, launch by end of quarter.
 
-This is an example project note — a "map of content" for one project. Keep a short description up top, capture links to relevant notes below, and the table underneath automatically lists every meeting linked to this project. Ask Claude to create pages like this for your real projects (the `personalize` skill does it for you).
+This is an example project note — a "map of content" for one project. Keep a short description up top, capture links to relevant notes below, and the table underneath automatically lists every meeting linked to this project. Ask Claude to create pages like this for your real projects (the `initiate` skill does it for you).
 
 ## Related notes
 
