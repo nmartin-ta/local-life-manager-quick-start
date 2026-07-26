@@ -1,2 +1,7 @@
 .DS_Store
 **/.obsidian/cache
+
+# Syncing between machines: keep git for the skills and config, and leave your
+# notes out of it. Uncomment the line below once the vault holds your own
+# material, and use Obsidian Sync (end-to-end encrypted) for the notes instead.
+# my-obsidian-vault/
