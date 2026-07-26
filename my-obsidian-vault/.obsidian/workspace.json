@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Areas/Local Life Manager/Ideas.md",
+                "file": "01 Projects/Website Refresh/Website Refresh.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ideas"
+              "title": "Website Refresh"
             }
           }
         ],
@@ -206,13 +206,18 @@
   },
   "active": "28f0cfc6255f80b8",
   "lastOpenFiles": [
+    "04 Meetings/2026-07-20 Website Refresh Kickoff.md",
+    "01 Projects/Website Refresh/Website Refresh.md",
+    "01 Projects/Website Refresh/User Journey.md",
+    "01 Projects/Projects.base",
+    "01 Projects/Policy Brief/Policy Brief.md",
+    "02 Areas/Local Life Manager/Ideas.md",
     "02 Areas/Local Life Manager/Backlog.md",
     "02 Areas/Admin/Organization Information.md",
     "98 Templates/Template, Time Log Entry.md",
     "98 Templates/Template, Daily Note.md",
     "98 Templates/Template, Meeting Note.md",
     "98 Templates/Template, Project.md",
-    "01 Projects/Website Refresh/Website Refresh.md",
     "00 Daily Notes/2026-07-20.md",
     "00 Daily Notes/2026-07-21.md",
     "00 Daily Notes/2026-07-25.md",
@@ -222,9 +227,6 @@
     "TaskNotes/Views/mini-calendar-default.base",
     "TaskNotes/Views",
     "TaskNotes",
-    "02 Areas/Local Life Manager/Ideas.md",
-    "01 Projects/Projects.base",
-    "01 Projects/Policy Brief/Policy Brief.md",
     "02 Areas/Professional Development/Courses.md",
     "05 Tasks/TaskNotes/Plan next-quarter content calendar.md",
     "05 Tasks/TaskNotes/Choose site host.md",
@@ -232,12 +234,10 @@
     "05 Tasks/TaskNotes/Draft sitemap.md",
     "03 References/References.md",
     "04 Meetings/Meetings.md",
-    "04 Meetings/2026-07-20 Website Refresh Kickoff.md",
     "05 Tasks/Views/tasks-default.base",
     "05 Tasks/Views/agenda-default.base",
     "05 Tasks/Views/calendar-default.base",
     "05 Tasks/Views/kanban-default.base",
-    "01 Projects/Website Refresh/Design Parameters.md",
-    "01 Projects/Website Refresh/User Journey.md"
+    "01 Projects/Website Refresh/Design Parameters.md"
   ]
 }

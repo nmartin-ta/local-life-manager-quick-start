@@ -10,13 +10,12 @@ Example project note #example. A project's page is where you keep the short desc
 
 ## Related notes
 
-- [[Courses]] — example of linking a project to a note in an area
-
 ```base
 filters:
   and:
-    - related-to.contains(this.file.asLink())
+    - file.hasLink(this.file)
     - type != "meeting"
+    - '!file.hasTag("task")'
 views:
   - type: table
     name: Related notes
@@ -33,7 +32,7 @@ views:
 filters:
   and:
     - file.hasTag("task")
-    - related-to.contains(this.file.asLink())
+    - file.hasLink(this.file)
     - status != "done"
 views:
   - type: table
@@ -54,7 +53,7 @@ views:
 filters:
   and:
     - type == "meeting"
-    - related-to.contains(this.file.asLink())
+    - file.hasLink(this.file)
 views:
   - type: table
     name: Meetings

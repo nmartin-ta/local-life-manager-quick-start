@@ -26,7 +26,7 @@ views:
     order:
       - file.name
       - date
-      - related-to
+      - note["related-to"]
     sort:
       - property: date
         direction: DESC
