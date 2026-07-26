@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 259.5
   },
   "right": {
     "id": "0c18611ebc5b3a51",
@@ -179,25 +179,33 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "tasknotes:Open mini calendar view": false,
+      "tasknotes:Open calendar view": false,
+      "tasknotes:Open tasks view": false,
+      "tasknotes:Open agenda view": false,
+      "tasknotes:Open Kanban board": false,
+      "tasknotes:Open Pomodoro timer": false,
+      "tasknotes:Open Pomodoro statistics": false,
+      "tasknotes:Create new task": false
     }
   },
   "active": "b275adb0064f6be2",
   "lastOpenFiles": [
     "Ideas.md",
-    "02 Areas/Professional Development/+Professional Development.md",
-    "98 Templates/Template, Daily Note.md",
-    "02 Areas/Admin/Organization Information.md",
-    "98 Templates/Template, Project.md",
-    "01 Projects/Website Refresh/User Journey.md",
-    "01 Projects/Website Refresh/Design Parameters.md",
+    "05 Tasks/Views/tasks-default.base",
+    "05 Tasks/Views/agenda-default.base",
+    "05 Tasks/Views/kanban-default.base",
+    "05 Tasks/Views/calendar-default.base",
     "01 Projects/Website Refresh/+Website Refresh.md",
     "01 Projects/+Projects.md",
-    "98 Templates/Template, Meeting Note.md",
-    "04 Meetings/2026-07-20 Website Refresh Kickoff.md",
     "04 Meetings/+Meetings.md",
+    "04 Meetings/2026-07-20 Website Refresh Kickoff.md",
     "00 Daily Notes/2026-07-20.md",
     "00 Daily Notes/2026-07-21.md",
-    "00 Daily Notes/2026-07-25.md"
+    "00 Daily Notes/2026-07-25.md",
+    "02 Areas/Professional Development/+Professional Development.md",
+    "98 Templates/Template, Daily Note.md",
+    "98 Templates/Template, Project.md"
   ]
 }
