@@ -1,6 +1,6 @@
 # Ideas
 
-The idea garden — where ideas end up organized. Jot them anywhere with `#idea` (daily notes especially) or tell Claude "capture an idea: …" and it lands under Inbox below. Say "review my ideas" and Claude sweeps the vault for `#idea` tags, transfers what it finds, and clusters everything into sections here.
+Where ideas end up once they're organized. Jot them anywhere with an `#idea` tag, daily notes especially, or tell Claude "capture an idea: …" and it lands under Inbox below. Saying "review my ideas" makes Claude sweep the vault for those tags, bring what it finds here, and group it into sections.
 
 ## Inbox
 

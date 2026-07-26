@@ -7,4 +7,4 @@ related-to: "[[Website Refresh]]"
 - Tone: plain and direct, closer to the About page than the old homepage
 - Real photos over stock illustration wherever we have them
 
-Example working note #example — a project's supporting notes sit next to its `+` page like this.
+Example working note #example. Supporting notes like this sit in the project folder alongside the project's own page, linked back to it with `related-to`.

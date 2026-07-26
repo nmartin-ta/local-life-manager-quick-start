@@ -6,7 +6,7 @@ tags:
 ---
 Refresh the team website: new structure, updated copy, launch by end of quarter.
 
-This is an example project note — a "map of content" for one project. Keep a short description up top, capture links to relevant notes below, and the table underneath automatically lists every meeting linked to this project. Ask Claude to create pages like this for your real projects (the `initiate` skill does it for you).
+Example project note #example. A project's page is where you keep the short description and the links; the tables below fill themselves in from whatever points here with `related-to`. The `initiate` skill sets up pages like this for your own projects, or you can ask Claude for one any time.
 
 ## Related notes
 

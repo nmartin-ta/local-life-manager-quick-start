@@ -6,7 +6,7 @@ tags:
 ---
 Write a one-pager on remote-work policy for the team: current practice, two options, a recommendation.
 
-A second example project — the vault handles any number of these, and `01 Projects/Projects.base` shows them all side by side.
+A second example project, here to show that `01 Projects/Projects.base` lists them all as cards.
 
 ## Related notes
 

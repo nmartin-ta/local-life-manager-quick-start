@@ -14,7 +14,7 @@ tags:
 - Agreed on three-phase approach: structure, copy, launch.
 - Sam owns the sitemap draft by Friday.
 - Open question: keep the blog or fold it into a news page?
-- This is an example meeting note. Because its `related-to` property links to [[Website Refresh]], it shows up automatically in that project's meetings table.
+- Example meeting note #example. Its `related-to` property points at [[Website Refresh]], which is why it appears in that project's meetings table.
 
 ## Action Items
 
