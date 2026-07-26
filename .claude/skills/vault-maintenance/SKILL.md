@@ -14,6 +14,7 @@ Housekeeping sweep over `my-obsidian-vault/`. **Always report first, act only on
 3. **Missing metadata**: meeting notes without `date` or with an empty `related-to`; project notes without `status`.
 4. **Stale projects**: `status: in-progress` projects whose `+` MOC and linked meetings have no edits in ~60 days. Suggest marking `status: completed` and moving the folder to `99 Archive/`, or reviving.
 5. **Broken links**: wikilinks pointing at notes that don't exist. Distinguish typos (propose the fix) from intentional future notes (leave alone).
+6. **Tasks**: in `05 Tasks/TaskNotes/`, open tasks with `due` before today (overdue), and open tasks with neither `due` nor `scheduled` (unscheduled — surface these; unscheduled work is what overwhelms people, not the total count). Suggest a date or `status: someday` for each. Never change a task's dates or status yourself.
 
 ## Report format
 

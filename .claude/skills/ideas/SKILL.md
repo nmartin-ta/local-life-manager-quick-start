@@ -5,7 +5,7 @@ description: Use when the user wants to capture a thought ("capture an idea", "n
 
 # Ideas — Capture and Review
 
-Two modes. Detect from the request.
+Two modes. Detect from the request. Commitments and to-dos ("remind me to", "I need to do X") are the `tasks` skill's job — an idea is a thought worth keeping, not an action.
 
 ## Capture mode
 

@@ -19,6 +19,7 @@ Folders carry numeric prefixes (`00 Daily Notes`, `01 Projects`, `02 Areas`, `03
 - **01 Projects/** — one folder per project: a `+Name.md` MOC (`type: project`, `status` of `in-progress` or `completed`, short description, embedded meetings and related-notes tables) plus working notes. Working notes point back at the MOC via `related-to`. Finished projects move to `99 Archive/`. New project MOCs come from `98 Templates/Template, Project.md`.
 - **02 Areas/** — ongoing responsibilities with no end date. One folder per area with a `+Name.md` note, `type: area`.
 - **03 References/** — source material and attachments.
+- **05 Tasks/** — the to-do system (TaskNotes plugin). A task is a note in `05 Tasks/TaskNotes/` whose frontmatter carries a `task` tag; filename = title. `status` is `open`, `done` (gets a `completedDate`), or `someday` (parked, no dates). `due` is a hard deadline; `scheduled` is when the user plans to do it. `related-to` links a task to its project or area MOC, which lists it automatically in that page's Tasks table. Views live in `05 Tasks/Views/`. The `tasks` skill owns capture and triage.
 - **99 Archive/** — anything no longer active. Move, don't delete.
 - **Ideas.md** — sits at the vault root; quick-capture inbox that the `ideas` skill appends to and reviews. Tag stray thoughts in other notes `#idea` — especially daily-note jottings — and the review sweep finds them.
 - **98 Templates/** — don't edit the Templater code (`<% … %>`) unless asked; explain it if the user is curious.

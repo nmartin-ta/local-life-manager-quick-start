@@ -15,3 +15,8 @@ tags:
 - Sam owns the sitemap draft by Friday.
 - Open question: keep the blog or fold it into a news page?
 - This is an example meeting note. Because its `related-to` property links to [[+Website Refresh]], it shows up automatically in that project's meetings table.
+
+## Action Items
+
+- [ ] Sam: sitemap draft by Friday
+- [ ] Pull together a hosting shortlist

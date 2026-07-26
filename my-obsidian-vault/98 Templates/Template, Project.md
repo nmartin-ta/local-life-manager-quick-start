@@ -24,6 +24,27 @@ views:
         direction: ASC
 ```
 
+## Tasks
+
+```base
+filters:
+  and:
+    - file.hasTag("task")
+    - related-to.contains(this.file.asLink())
+    - status != "done"
+views:
+  - type: table
+    name: Tasks
+    order:
+      - file.name
+      - due
+      - scheduled
+      - status
+    sort:
+      - property: due
+        direction: ASC
+```
+
 ## Meetings
 
 ```base
