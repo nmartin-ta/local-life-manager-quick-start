@@ -1,5 +1,5 @@
 ---
-related-to: "[[+Website Refresh]]"
+related-to: "[[Website Refresh]]"
 ---
 
 - Visitor lands on the homepage, usually from search or a partner link

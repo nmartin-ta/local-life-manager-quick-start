@@ -10,7 +10,7 @@ This is an example project note — a "map of content" for one project. Keep a s
 
 ## Related notes
 
-- [[+Professional Development]] — example of linking a project to an area
+- [[Courses]] — example of linking a project to a note in an area
 
 ```base
 filters:

@@ -1,9 +1,6 @@
 ---
 type: moc
 ---
-
-# Meetings
-
 All meeting notes live in this folder. Press the button to create one — you'll be asked for a title, and today's date is filled in automatically. Link each meeting to a project by setting its `related-to` property, and it will appear on that project's page automatically.
 
 ```meta-bind-button

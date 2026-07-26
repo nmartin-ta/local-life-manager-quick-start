@@ -10,7 +10,7 @@ type: daily-note
 
 ## Notes
 ```meta-bind-button
-label: Insert Timestamp
+label: Insert
 style: primary
 actions:
   - type: insertIntoNote

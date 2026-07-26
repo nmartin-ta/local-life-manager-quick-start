@@ -1,5 +1,5 @@
 ---
-related-to: "[[+Website Refresh]]"
+related-to: "[[Website Refresh]]"
 ---
 
 - Palette: keep the current navy, drop the teal accent — it never survived print
