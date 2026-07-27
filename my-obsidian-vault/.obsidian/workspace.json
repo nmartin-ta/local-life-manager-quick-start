@@ -206,6 +206,9 @@
   },
   "active": "28f0cfc6255f80b8",
   "lastOpenFiles": [
+    "05 Tasks/Views/relationships.base",
+    "05 Tasks/Views/pomodoro-stats.base",
+    "05 Tasks/Views/mini-calendar-default.base",
     "04 Meetings/2026-07-20 Website Refresh Kickoff.md",
     "01 Projects/Website Refresh/Website Refresh.md",
     "01 Projects/Website Refresh/User Journey.md",
@@ -236,8 +239,6 @@
     "04 Meetings/Meetings.md",
     "05 Tasks/Views/tasks-default.base",
     "05 Tasks/Views/agenda-default.base",
-    "05 Tasks/Views/calendar-default.base",
-    "05 Tasks/Views/kanban-default.base",
     "01 Projects/Website Refresh/Design Parameters.md"
   ]
 }
